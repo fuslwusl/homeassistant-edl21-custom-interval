@@ -57,7 +57,7 @@ To set it up, follow this procedure:
 
 **scan_interval_seconds**
 - The interval for measurements.
-- required: false
+- required: true
 - type: int
 
 
