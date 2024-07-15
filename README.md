@@ -18,6 +18,13 @@ Tested smart meters:
 - EMH metering eHZ Generation K (enable InF as described in manual to retrieve full data)
 - efr SGM-C4 (enable InF as described in manual to retrieve full data)
 
+## Migration from V2.x.x
+* Remove the yaml configuration file for edl21
+* Installing this new version with the UI configuration
+* Restart Homeassistant - the migration process should start and you should get data every 6 seconds
+
+If something fails you can restore your backup.
+
 ## Background
 
 Many community users need a lot quicker scan interval then the forced 60 seconds of the official `edl21` integration. Electical power peaks will not be detected with the standard 60 seconds measurement interval.
@@ -43,10 +50,3 @@ Take care that every update of this edl21-custom-interval integration will overw
 * Take care of your historic data and make a backup first.
 * Try the update on a test system first if possible.
 * Make a full system backup of Home assistant so you can restore if something goes wrong.
-
-## Migration
-* Remove the yaml configuration file for edl21
-* Installing this new version with the UI configuration
-* Restart Homeassistant - the migration process should start and you should get data every 6 seconds
-
-If something failes you can restore your backup.
