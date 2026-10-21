@@ -1,5 +1,5 @@
 {
-  "version": "3.0.0",
+  "version": "3.0.1",
   "domain": "edl21",
   "name": "EDL21",
   "codeowners": ["fuslwusl"],
@@ -9,5 +9,8 @@
   "integration_type": "hub",
   "iot_class": "local_push",
   "loggers": ["sml"],
-  "requirements": ["pysml==0.0.12"]
+  "requirements": [
+    "pysml==0.1.5",
+    "bitstring<5"
+  ]
 }
